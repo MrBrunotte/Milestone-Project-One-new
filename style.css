@@ -37,7 +37,7 @@ a:hover {
 /* background color for the features sections */
 
 .container-wrapper--purple {
-  background-color: #8400ff;
+  background-color: rgba(27, 26, 27, 0.418);
   color: white;
 }
 
@@ -63,7 +63,7 @@ a:hover {
 .callout-container {
   /* vh = viewport height 100% */
   height: 100vh;
-  background: url(/assets/images/background.jpg) no-repeat bottom right fixed;
+  background: url("images\rsz_background.jpg") no-repeat bottom right fixed;
   /* prefixes so that the image loads on most browsers */
   -webkit-background-size: cover;
   -moz-background-size: cover;
