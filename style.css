@@ -4,6 +4,7 @@ body {
 
 h2 {
   font-family: "Nobile", sans-serif;
+  margin-bottom: 50px;
 }
 
 h1,
@@ -27,6 +28,8 @@ a:hover {
   text-decoration: none;
 }
 
+  
+
 /*-------------------------------- CARDS -------------------------*/
 .card-title {
   font-family: "Nobile", sans-serif !important;
@@ -46,6 +49,7 @@ z-index: -5;
 }
 
 .container-wrapper {
+  height: 100vh;
 }
 
 .quotes-container {
@@ -119,10 +123,13 @@ z-index: -5;
 
 .opaque-overlay {
   position: absolute;
+  margin-bottom: 362px;
   top: 0;
   left: 0;
-  height: 500%;
+  height: 100vh;
+  bottom: 0;
   width: 100%;
+  z-index: -10;
   background-color: rgb(0, 0, 0, 0.5); /* 0.5 (Alpha) is the opaque transparency*/
 }
 
@@ -131,6 +138,7 @@ z-index: -5;
 /* take of the margins om the headers! */
 
 .page-header {
+  margin-top: 90px;
   margin-bottom: 0;
   border-bottom: 0;
   text-align: center;
@@ -186,6 +194,8 @@ z-index: -5;
   text-align: center;
 }
 
+
+
 /*-------------------------------- CONTENT CONTAINERS -------------------------*/
 
 .content-container {
@@ -204,6 +214,7 @@ z-index: -5;
 }
 
 .jumbotron-header {
+  margin-top: 90px;
   font-family: "Nobile", sans-serif;
   font-size: 3em;
   letter-spacing: 0.1em;
@@ -329,8 +340,8 @@ margin-left: 10px;
 .btn--orange:focus,
 .btn--orange:active:focus {
   color: white;
-  background-color: #cb4b20;
-  border-color: #cb4b20;
+  background-color: #8f3619;
+  border-color: #8f3619;
 }
 
 /*-------------------------------- END BUTTONS -------------------------*/
@@ -359,6 +370,15 @@ margin-left: 10px;
 
 .quote {
   quotes: "“" "”" "‘" "’";
+}
+
+.quote-testimonials {
+  color: black;
+
+}
+
+.quote-p {
+  color: black;
 }
 
 .quote:before {

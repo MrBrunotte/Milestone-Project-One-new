@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--! Bootstrap CSS links We always load the CSS links at the top so the browser loads the CSS first! -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!--! fontawsome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous" />
+    <!--! Google fonts link I want to paste it in after the Bootstrap links but before my CSS style sheet. -->
+    <link href="https://fonts.googleapis.com/css?family=Nobile:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kalam" rel="stylesheet" />
+    <!--! My style sheet link I want this to be loaded last! -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Ruth Brunotte | Vitality & Food!</title>
+</head>
+
+<body>
+    <div class="container-fluid navalert-container">
+        <!--Navbars are fluid by default and to be responsive we need to add the class navbar-expand-sm for smaller screens -->
+        <nav class="navbar fixed-top navbar-dark navbar-expand-sm ">
+            <!--! the home id does not work??-->
+            <a href="index.html" class="navbar-brand">Wellness Bahamas</a>
+            <!-- javascript add on button, ml-auto pushes it to the right, the attributes data-toggle makes the menu collapse, data-target is the ID, aria (Accesible-Rich-Internet-Application)-->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- this div is the collapsable element. The ID (navbarNavDropdown) matches the ID (#navbarNavDropdown) in the data-target -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- mr-auto to outomatically push content to the left -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- list, first one is active so it is highlited, mr-2 to give righthand spacing -->
+                    <li class="active nav-item mr-2">
+                        <a class="nav-link" href="#VitalityAndFood">vitality & food</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#coaching">coaching program</a>
+                    </li>
+                    <!-- adding a dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-item" href="#courses" id="navbarNavDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">culinary
+                            courses</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                            <a class="dropdown-item" href="#courses">kick-Start</a>
+                            <a class="dropdown-item" href="#courses">private</a>
+                            <a class="dropdown-item" href="#courses">semi-Private</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#testimonials">testimonials</a>
+                    </li>
+
+                    <li class="nav-item mr-2 d-block d-sm-none">
+                        <a class="nav-link" href="/login">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- hide the marketing and sign in/up button on mobile screens (This will only be displayed on medium and above)-->
+            <div class="d-none d-md-block">
+                <!-- marketing text of the navbar my-auto for an automatic top and bottom-->
+                <p class="navbar-text my-auto mr-2 capitalize">
+                    <i>the secret to your health!</i>
+                </p>
+                <a href="/login" class="btn btn--cta btn--orange">Sign In</a>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid callout-container">
+            <!--! Callout -->
+            <div class="opaque-overlay">&nbsp;</div>
+            <div class="row">
+                <div class="col-12" id="#home">
+                    <section class="callout jumbotron text-center">
+                        <h1 class="jumbotron-header">plant-Based coach program</h1>
+                        <!-- lead is a bootstrap built in class -->
+                        <p class="jumbotron-subheader">
+                            - The secret to your future health -
+                        </p>
+
+                        <p class="lead">
+                            Sign up and take control of your health!
+                            <span class="d-block d-sm-none"><br /></span><strong><mark>First month free, <i>Save $
+                                        333!</i></mark></strong>
+                        </p>
+                        <!-- add to attributes for the Modal: data-toggle="modalSignUp" and data-target="#signUpModal" to link the button to the modal -->
+                        <button class="btn btn-lg btn--cta btn--orange" data-toggle="modal" data-target="#signUpModal">
+                            More info!
+                        </button>
+                    </section>
+
+                    <div class="container-welcome-quote">
+                        <div class="row">
+                            <div class="col-12 page-header">
+                                <p class="welcome-quote quote">
+                                    The best day of your life is the one on which <br> you decide your
+                                    life is your own, No apologies <br> or excuses. No one to lean on,
+                                    rely on, or blame. <br> zThe gift Of life is yours; . . . and you
+                                    alone are responsible for the quality of it.
+                                </p>
+                                <br />
+                                <p class="welcome-quote"><strong> - Dan Zadra - </strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--! END Callout -->
+
+        <!--! Features ONE -->
+        <div class="container-wrapper--color" id="VitalityAndFood">
+            <div class="features-container content-container">
+                <section class="features">
+                    <div class="opaque-overlay">&nbsp;
+                        <div class="row">
+                            <div class="col-12 page-header" id="#mystory">
+                                <h2>vitality and food - my story</h2>
+                            </div>
+                        </div>
+                        <div class="row featureOneSections">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="feature">
+                                    <!-- fax fa-spa is the icon from fontawsome. d-none d-sm-inline to hide it on mobile -->
+                                    <h3><i class="fas fa-spa d-none d-sm-block"></i> My story</h3>
+                                    <p>
+                                        I am a Certified Natural Health Consultant and Sivananda Yoga Instructor,
+                                        Nutrition
+                                        and Wellness professional focused on conducting Nutrition Consultations and
+                                        creating
+                                        Personalized Yoga Instruction promoting Healthy Bones for Balance, Endurance and
+                                        Strengths, Yoga for Stress Managements Creating Health. Teaching how to prepare
+                                        home
+                                        cooked Vegan/Vegetarian, Raw and Cooked Meals in groups or on an one an one
+                                        personal
+                                        basis.
+                                    </p>
+                                    <a href="mystory.html" class="btn btn--cta btn--orange">Read More</a>
+                                </div>
+                            </div>
+                            <!-- col-lg-4 will keep them side by side on large screens -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="feature">
+                                    <h3>
+                                        <i class="fas fa-camera-retro d-none d-sm-block"></i> photos &
+                                        videos
+                                    </h3>
+                                    <p>
+                                        <strong>Add Janines video to this section! </strong><br />Lorem ipsum dolor sit,
+                                        amet
+                                        consectetur
+                                        adipisicing
+                                        elit. Aperiam quibusdam culpa sequi sapiente ullam odio iure
+                                        explicabo voluptates modi, ipsa, architecto deleniti nam
+                                        placeat, voluptatum officia corrupti! Molestiae nisi
+                                        doloremque quaerat earum, voluptatum distinctio tenetur quis
+                                        necessitatibus? Harum quas libero ipsam mollitia facilis!
+                                        Libero vel blanditiis ratione, dolores vitae adipisci
+                                        praesentium sint quod illum nulla. Maiores veritatis numquam
+                                        sunt rem corporis, eveniet nobis architecto blanditiis dolore
+                                        repudiandae accusamus dolores autem voluptate at, cum voluptas
+                                        ratione sapiente exercitationem ullam. Qui tempore aliquid
+                                        suscipit maiores ea animi id nam! Velit facilis aliquam
+                                        dolorum sint aperiam sit similique iste, minus, nisi,
+                                        repudiandae quis!§
+                                    </p>
+                                    <p>
+                                        <a class="btn btn-sm btn-light" href="#">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- d-md-none: do not display on large size but it will be displayed on small size. d-lg-block + col-lg-4 so it will be visible on large screens-->
+                            <div class="col-12 d-md-none d-lg-block col-lg-4">
+                                <div class="feature">
+                                    <h3>
+                                        <i class="fas fa-heart d-none d-sm-block"></i> lifestyle
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                                        dolor error, quam maiores nisi porro cumque aliquam, alias
+                                        molestiae debitis officiis nemo ab distinctio dolore
+                                        accusantium aperiam repudiandae eaque reiciendis deleniti
+                                        nulla nesciunt ipsam! Odit ducimus quos dolorum harum,
+                                        architecto laudantium velit exercitationem alias nobis
+                                        repudiandae necessitatibus nesciunt non nisi rerum hic nostrum
+                                        porro cum provident eum. Fuga recusandae excepturi saepe ut
+                                        optio officia alias numquam, commodi odio cupiditate labore
+                                        exercitationem quos praesentium perspiciatis dignissimos quasi
+                                        facere, nam voluptatem nisi debitis! Ullam ipsa molestias,
+                                        expedita nulla, numquam non veritatis a eius accusantium
+                                        quaerat id rerum placeat dignissimos. Consectetur, dolor
+                                        dolores.
+                                    </p>
+                                    <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- END Features ONE -->
+
+        <!--! Features TWO -->
+        <div class="opaque-overlay">&nbsp;</div>
+        <div class="container-wrapper container-wrapper--color">
+            <div class="features-container content-container">
+                <section class="features">
+
+                    <div class="row">
+                        <div class="col-12 page-header" id="#coaching">
+                            <h2>Coaching Program</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="feature">
+                                <h3>what is it?</h3>
+                                <p>
+                                    Your three months of comprehensive vegan coaching support
+                                    begins with a one-hour initial consultation to gather
+                                    background information and establish your personal goals. We
+                                    will continue working together over the next three months,
+                                    with six 45-minute follow-up sessions, plus two 60-minute
+                                    sessions (or any combination that fits your schedule), during
+                                    which we will develop effective transitional strategies to
+                                    help you seriously get on trac, and then really stay on track
+                                    with your new healthy lifestyle. This 90-day program includes
+                                    personalized recipes and customized menu plans, plus unlimited
+                                    email support. In the Nassau, Bahamas area, your Comprehensive
+                                    Coaching Program can also include a personal pantry makeover
+                                    or grocery shopping tour, as well as scheuled cooking sessions
+                                    together. Comprehensive Three Month Coaching Program: $999
+                                </p>
+                                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="feature">
+                                <h3>how does it work?</h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                                    officiis beatae architecto laboriosam ducimus minus adipisci
+                                    voluptatem nobis, omnis, tenetur ratione minima, amet
+                                    doloremque sunt! Consectetur, magnam saepe consequatur
+                                    doloribus officia quisquam, maiores deserunt eaque pariatur
+                                    qui dolores voluptates molestiae corrupti adipisci cupiditate
+                                    amet veniam laborum autem ipsa? Porro accusantium quo debitis
+                                    hic nisi ipsum. Debitis sed temporibus repellat? Obcaecati
+                                    recusandae quae dolore quam, tenetur cum aut ex, eligendi
+                                    commodi ipsum accusamus nemo iure nesciunt qui quas sapiente
+                                    magni natus accusantium est nulla in pariatur sunt? Dolorum
+                                    ratione obcaecati hic maiores, eveniet sint accusamus odio
+                                    mollitia soluta id asperiores tempore!
+                                </p>
+                                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-md-none d-lg-block col-lg-4">
+                            <div class="feature">
+                                <h3>contact</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Exercitationem adipisci voluptatum soluta sit accusamus
+                                    quibusdam incidunt quia labore consequatur cumque itaque quis
+                                    unde minima ipsam, similique dicta doloremque! Eum et quos
+                                    nisi harum quo eligendi qui alias placeat repellendus nam!
+                                    Nostrum quod earum minima aliquam in eos, libero
+                                    exercitationem assumenda obcaecati reiciendis. Corporis, culpa
+                                    vero voluptatem asperiores, vitae sunt, perspiciatis
+                                    blanditiis enim porro ratione autem! Incidunt adipisci
+                                    quibusdam placeat soluta neque sed nihil numquam tenetur rem
+                                    facilis aperiam ut odio aliquid, quaerat accusantium impedit
+                                    ab eaque laborum quia et. Totam, nemo eos? Dolore quam quaerat
+                                    dolorum quidem non quo obcaecati.
+                                </p>
+                                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END Features TWO -->
+            </div>
+        </div>
+    </div>
+    <!--! Features THREE -->
+    <div class="container-wrapper container-wrapper--color">
+        <div class="features-container content-container">
+            <section class="features">
+                <div class="opaque-overlay">&nbsp;</div>
+                <div class="row">
+                    <div class="col-12 page-header" id="#courses">
+                        <h2>culinary courses</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="feature">
+                            <h3>
+                                kick-start <span class="badge badge-success">NEW!</span>
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellat enim deleniti sapiente laboriosam recusandae in nam
+                                cum adipisci ut accusamus vitae ducimus autem asperiores rem
+                                aut, ratione consectetur nostrum facilis doloremque
+                                repudiandae! Atque quis aut eveniet necessitatibus incidunt ex
+                                officia dolores! Asperiores laboriosam architecto velit nobis
+                                possimus at quod, ipsum quos, voluptate saepe dolores
+                                praesentium consequuntur quasi inventore minima error. Odio
+                                facilis quo tempora nostrum optio quae possimus laudantium
+                                sequi, et quidem. Ab reiciendis sint veniam, sit eos nisi
+                                ullam quas et quam quos omnis nam recusandae optio corporis
+                                illo molestias id. Facilis illum labore minus, laboriosam id
+                                enim cum.
+                            </p>
+                            <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="feature">
+                            <h3>individual vegan cooking class</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Labore ab rem eaque commodi accusantium eum ex delectus,
+                                ducimus sit aspernatur error. Nam perferendis iure soluta
+                                voluptatem. Similique nisi magni vitae, unde eveniet explicabo
+                                temporibus, debitis commodi, cupiditate voluptate blanditiis
+                                consequuntur dolorem recusandae harum deserunt esse eum
+                                beatae. Similique eaque deserunt vero numquam in, doloribus
+                                maiores ullam, quod alias quaerat inventore, fugiat tempora
+                                beatae neque facilis tempore aperiam exercitationem
+                                dignissimos totam. Eum, voluptas! Animi minus enim culpa ullam
+                                molestias cum. Eos recusandae ipsa cumque possimus architecto
+                                rem, mollitia obcaecati. Maiores cum vitae deleniti neque unde
+                                quam architecto veritatis fuga ratione asperiores!
+                            </p>
+                            <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="feature">
+                            <h3>semi-Private vegan cooking class</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellendus, libero!
+                            </p>
+                            <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END Features THREE -->
+        </div>
+    </div>
+    <!--! Quotes -->
+    <div class="container-wrapper">
+        <div class="quotes-container content-container">
+            <section class="quotes">
+                <div class="row">
+                    <div class="col-12 page-header" id="#testimonials">
+                        <h2 class="text-uppercase">testimonials</h2>
+                        <hr class=" block-divider block-divider--short" />
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- col-12, col-md-6 for large and medium screens -->
+                    <div class="col-12 col-md-6">
+                        <div class="media">
+                            <!-- hide in mobile -->
+                            <div class="d-none d-sm-block">
+                                <img src="images\Stefan center.jpg" class="rounded-circle mr-3" height="250"
+                                    width="250" />
+                            </div>
+                            <div class="media-body text-center">
+                                <blockquote>
+                                    <p class="quote">
+                                        I should have started the consultation earlier!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi velit fugit
+                                        porro aliquam,
+                                        eaque
+                                        in harum sed. Iure, accusantium sapiente?
+                                    </p>
+                                    <p><strong>Stefan</strong></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="images\Rebecca center.jpg" class="rounded-circle mr-3" height="250"
+                                        width="250" />
+                                </div>
+                                <div class="media-body text-center">
+                                    <blockquote>
+                                        <p class="quote">
+                                            Fantastic!
+                                        </p>
+                                        <p>
+                                            Kick-start course got me on track! Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Enim ea magnam reiciendis, neque laborum expedita corporis
+                                            deserunt maxime
+                                            architecto ipsam.
+                                        </p>
+                                        <p><strong>Rebecca</strong></p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- END Quotes -->
+    <!-- Footer -->
+    <div class="container footer-container">
+        <footer class="container-fluid">
+            <h5>Social</h5>
+            <ul>
+                <li>
+                    <a target="_blank" href="">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.linkedin.com/in/stefan-brunotte-44b01521/">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.facebook.com/brunotte">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://twitter.com/mrbrunotte?lang=en">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.instagram.com/mrbrunotte/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <!-- END Footer -->
+
+    <!-- Bootstrap Javalinks should be above the CDN links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN links - Pasted to the bottom of the body because i want it to load last -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
