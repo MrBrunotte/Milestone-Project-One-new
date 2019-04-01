@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--! Bootstrap CSS links We always load the CSS links at the top so the browser loads the CSS first! -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!--! fontawsome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous" />
+    <!--! Google fonts link I want to paste it in after the Bootstrap links but before my CSS style sheet. -->
+    <link href="https://fonts.googleapis.com/css?family=Nobile:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kalam" rel="stylesheet" />
+    <!--! My style sheet link I want this to be loaded last! -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Ruth Brunotte | Vitality & Food!</title>
+</head>
+
+<body>
+    <!-- div around the whole section so that the navbar is fixed to the top of the page when scrolling -->
+    <div class="container-fluid navalert-container">
+        <!--Navbars are fluid by default and to be responsive we need to add the class navbar-expand-sm for smaller screens -->
+        <nav class="navbar fixed-top navbar-dark navbar-expand-sm ">
+            <!--! the home id does not work??-->
+            <a href="index.html" class="navbar-brand">Wellness Bahamas</a>
+            <!-- javascript add on button, ml-auto pushes it to the right, the attributes data-toggle makes the menu collapse, data-target is the ID, aria (Accesible-Rich-Internet-Application)-->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- this div is the collapsable element. The ID (navbarNavDropdown) matches the ID (#navbarNavDropdown) in the data-target -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- mr-auto to outomatically push content to the left -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- list, first one is active so it is highlited, mr-2 to give righthand spacing -->
+                    <li class="active nav-item mr-2">
+                        <a class="nav-link" href="#VitalityAndFood">vitality & food</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#coaching">coaching program</a>
+                    </li>
+                    <!-- adding a dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-item" href="#courses" id="navbarNavDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">culinary
+                            courses</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                            <a class="dropdown-item" href="#courses">kick-Start</a>
+                            <a class="dropdown-item" href="#courses">private</a>
+                            <a class="dropdown-item" href="#courses">semi-Private</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#testimonials">testimonials</a>
+                    </li>
+
+                    <li class="nav-item mr-2 d-block d-sm-none">
+                        <a class="nav-link" href="/login">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- hide the marketing and sign in/up button on mobile screens (This will only be displayed on medium and above)-->
+            <div class="d-none d-md-block">
+                <!-- marketing text of the navbar my-auto for an automatic top and bottom-->
+                <p class="navbar-text my-auto mr-2 capitalize">
+                    <i>the secret to your health!</i>
+                </p>
+                <a href="/login" class="btn btn--cta btn--orange">Sign In</a>
+            </div>
+        </nav>
+
+
+
+
+        <!--! My Story -->
+        <div class="container-wrapper--color" id="VitalityAndFood">
+            <div class="features-container content-container">
+                <section class="features">
+                    <div class="opaque-overlay">&nbsp;</div>
+                    <div class="row">
+                        <div class="col-12 myStory-header" id="#mystory">
+                            <h1>my story</h1>
+                        </div>
+                    </div>
+                    <div class="row myStory">
+                        <div class="col-12">
+                            <!-- fax fa-spa is the icon from fontawsome. d-none d-sm-inline to hide it on mobile -->
+                            <img src="images\Mammamystory.jpg" class="rounded mx-auto d-block" alt="Picture of ruth">
+                            <br>
+                            <h3><i class="d-none d-sm-block"></i>Welcome to my story!</h3>
+
+                            <p>
+                                I am a Certified Natural Health Consultant and Sivananda Yoga Instructor,
+                                Nutrition
+                                and Wellness professional focused on conducting Nutrition Consultations and
+                                creating
+                                Personalized Yoga Instruction promoting Healthy Bones for Balance, Endurance and
+                                Strengths, Yoga for Stress Managements Creating Health. Teaching how to prepare
+                                home
+                                cooked Vegan/Vegetarian, Raw and Cooked Meals in groups or on an one an one
+                                personal
+                                basis.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus eius, totam,
+                                autem quidem quisquam earum molestias qui ipsum, iure at quaerat necessitatibus animi
+                                perferendis magni? Velit aspernatur consequatur animi rem dolores et, delectus assumenda
+                                vero aut repellendus ex nemo sunt. Perferendis incidunt repudiandae dolores tempore
+                                tempora! Necessitatibus culpa quod pariatur, molestiae modi facere soluta praesentium
+                                cupiditate nemo illum totam velit nam nihil delectus officiis iure sint aliquid beatae
+                                iusto id! Delectus corrupti nisi provident velit ad iure suscipit assumenda cupiditate
+                                ipsam eaque ipsa quas earum possimus veritatis deserunt quia optio doloribus neque, quo
+                                laudantium dolor quidem quaerat? Tempora dicta fugiat qui, eligendi minus laboriosam,
+                                voluptate quo minima eveniet similique in provident fuga neque id necessitatibus odio
+                                repudiandae accusamus maxime nostrum, soluta unde! Et optio, iure sint id architecto
+                                beatae eveniet placeat sed nemo laudantium laborum necessitatibus tenetur, vel tempore
+                                aliquam minus dolorum quae similique nihil consectetur dolor commodi, amet quia.
+                                Pariatur, consectetur! Dolore dignissimos distinctio tenetur illo eos omnis commodi
+                                voluptatem, modi quibusdam, animi accusantium velit harum laboriosam officia qui
+                                accusamus est eveniet repudiandae nulla nesciunt reiciendis ipsa? Voluptatibus corporis
+                                sequi minus ipsum accusamus voluptas dolor! Eius, non ut eligendi enim atque eos illo
+                                sequi nulla maxime ipsa nobis quos magni harum minima repellendus odit blanditiis
+                                consequatur? Obcaecati reprehenderit aspernatur pariatur commodi cupiditate corporis ut
+                                voluptatum quas, provident eos! Iure iusto blanditiis molestiae deserunt inventore
+                                reiciendis consequuntur sit impedit temporibus rem labore fuga, corrupti magnam atque
+                                autem libero animi qui nesciunt, necessitatibus consequatur asperiores reprehenderit
+                                pariatur minus! Aspernatur numquam earum, tenetur repudiandae nemo dicta iure, saepe
+                                alias aut nam, maiores sapiente sed nostrum? Maxime repudiandae aut harum ea cupiditate
+                                ipsa laborum? Eaque possimus tempore ipsa asperiores dolores fugiat iusto hic
+                                cupiditate, quam aut rerum corrupti pariatur enim assumenda iste, quis neque sed illo.
+                                Delectus praesentium unde modi ex iusto officia excepturi maxime necessitatibus, sequi
+                                aliquam harum laboriosam deserunt eum ad minus. Architecto nisi eos consequatur! Magni
+                                laudantium dolorum deserunt sunt incidunt dolor tempore dolorem itaque voluptates, ipsam
+                                corrupti, cum, sit voluptatibus natus nostrum harum molestiae ea nisi! Unde nemo
+                                necessitatibus itaque laboriosam nam praesentium recusandae incidunt odit! Voluptate
+                                illo velit magni sed eos doloremque sunt quasi autem ex reiciendis neque eum, qui
+                                nesciunt cum! Tempora, adipisci? Repellendus similique sequi accusamus nam ducimus
+                                molestias quos quisquam aut expedita ex voluptate sunt, placeat, iusto ipsum iste
+                                consectetur at eius exercitationem perspiciatis eum minima explicabo aperiam. Velit
+                                soluta debitis cumque consectetur, harum hic.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--! END My Story -->
+            </div>
+        </div>
+    </div>
+
+    <!--! Bootstrap Javalinks should be above the CDN links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p lopper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN links - Pasted to the bottom of the body because i want it to load last -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

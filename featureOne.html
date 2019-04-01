@@ -24,11 +24,11 @@
 </head>
 
 <body>
+    <!-- div around the whole section so that the navbar is fixed to the top of the page when scrolling -->
     <div class="container-fluid navalert-container">
         <!--Navbars are fluid by default and to be responsive we need to add the class navbar-expand-sm for smaller screens -->
-
-        <nav class="navbar navbar-dark navbar-expand-sm">
-            <a href="/" class="navbar-brand">Wellness Bahamas</a>
+        <nav class="navbar fixed-top navbar-dark navbar-expand-sm ">
+            <a href="#" class="navbar-brand">Wellness Bahamas</a>
             <!-- javascript add on button, ml-auto pushes it to the right, the attributes data-toggle makes the menu collapse, data-target is the ID, aria (Accesible-Rich-Internet-Application)-->
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                 <ul class="navbar-nav mr-auto">
                     <!-- list, first one is active so it is highlited, mr-2 to give righthand spacing -->
                     <li class="active nav-item mr-2">
-                        <a class="nav-link" href="#mystory">vitality & food</a>
+                        <a class="nav-link" href="#VitalityAndFood">vitality & food</a>
                     </li>
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="#coaching">coaching program</a>
@@ -74,221 +74,137 @@
                 <a href="/login" class="btn btn--cta btn--orange">Sign In</a>
             </div>
         </nav>
-    </div>
 
-    <div class="container-fluid callout-container">
-        <!--! Callout -->
-        <div class="opaque-overlay">&nbsp;</div>
-        <div class="row">
-            <div class="col-12" id="#home">
-                <section class="callout jumbotron text-center">
-                    <h1 class="jumbotron-header">plant-Based coach program</h1>
-                    <!-- lead is a bootstrap built in class -->
-                    <p class="jumbotron-subheader">
-                        - The secret to your future health -
-                    </p>
-                    <p class="lead">
-                        Sign up and take control of your health!
-                        <span class="d-block d-sm-none"><br /></span><strong><mark>First month free, <i>Save $
-                                    333!</i></mark></strong>
-                    </p>
-                    <!-- add to attributes for the Modal: data-toggle="modalSignUp" and data-target="#signUpModal" to link the button to the modal -->
-                    <button class="btn btn-lg btn--cta btn--orange" data-toggle="modal" data-target="#signUpModal">
-                        Sign Up!
-                    </button>
-                </section>
 
-                <div class="container-welcome-quote">
-                    <div class="row">
-                        <div class="col-12 page-header">
-                            <p class="welcome-quote quote">
-                                The best day of your life is the one on which <br> you decide your
-                                life is your own, No apologies <br> or excuses. No one to lean on,
-                                rely on, or blame. <br> zThe gift Of life is yours; . . . and you
-                                alone are responsible for the quality of it.
-                            </p>
-                            <br />
-                            <p class="welcome-quote"><strong> - Dan Zadra - </strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--! END Callout -->
-
-    <!--! Features ONE -->
-    <div class="container-wrapper--color">
-        <div class="features-container content-container">
-            <section class="features">
-                <div class="opaque-overlay">&nbsp;</div>
-                <div class="row">
-                    <div class="col-12 page-header" id="#mystory">
-                        <h2>vitality and food - my story</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="feature">
-                            <!-- fax fa-spa is the icon from fontawsome. d-none d-sm-inline to hide it on mobile -->
-                            <h3><i class="fas fa-spa d-none d-sm-block"></i> My story</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Cupiditate sunt quos voluptatum asperiores quod deleniti
-                                obcaecati ratione labore optio neque, consectetur officiis
-                                saepe distinctio earum voluptatibus consequatur aliquid
-                                magnam. Sunt obcaecati numquam eos minima illum possimus ipsa
-                                quas delectus pariatur odio similique voluptatibus
-                                accusantium, rem nesciunt sapiente distinctio repudiandae
-                                quidem enim ad rerum minus nostrum nihil unde impedit.
-                                Incidunt quidem adipisci laboriosam nisi saepe possimus. Cum
-                                aliquid libero soluta laborum nemo repellendus cumque.
-                                Distinctio error corrupti placeat impedit accusantium.
-                                Excepturi voluptate minus quam velit quae, odit facere eum
-                                fugit asperiores corrupti atque aut repudiandae earum harum id
-                                aspernatur commodi praesentium?
-                            </p>
-                            <a href="#" class="btn btn--cta btn--orange">Read More</a>
-                        </div>
-                    </div>
-                    <!-- col-lg-4 will keep them side by side on large screens -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="feature">
-                            <h3>
-                                <i class="fas fa-camera-retro d-none d-sm-block"></i> photos &
-                                videos
-                            </h3>
-                            <p>
-                                <strong>Add Janines video to this section! </strong><br />Lorem ipsum dolor sit, amet
-                                consectetur
-                                adipisicing
-                                elit. Aperiam quibusdam culpa sequi sapiente ullam odio iure
-                                explicabo voluptates modi, ipsa, architecto deleniti nam
-                                placeat, voluptatum officia corrupti! Molestiae nisi
-                                doloremque quaerat earum, voluptatum distinctio tenetur quis
-                                necessitatibus? Harum quas libero ipsam mollitia facilis!
-                                Libero vel blanditiis ratione, dolores vitae adipisci
-                                praesentium sint quod illum nulla. Maiores veritatis numquam
-                                sunt rem corporis, eveniet nobis architecto blanditiis dolore
-                                repudiandae accusamus dolores autem voluptate at, cum voluptas
-                                ratione sapiente exercitationem ullam. Qui tempore aliquid
-                                suscipit maiores ea animi id nam! Velit facilis aliquam
-                                dolorum sint aperiam sit similique iste, minus, nisi,
-                                repudiandae quis!§
-                            </p>
-                            <p>
-                                <a class="btn btn-sm btn-light" href="#">Read More</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- d-md-none: do not display on large size but it will be displayed on small size. d-lg-block + col-lg-4 so it will be visible on large screens-->
-                    <div class="col-12 d-md-none d-lg-block col-lg-4">
-                        <div class="feature">
-                            <h3>
-                                <i class="fas fa-heart d-none d-sm-block"></i> lifestyle
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                                dolor error, quam maiores nisi porro cumque aliquam, alias
-                                molestiae debitis officiis nemo ab distinctio dolore
-                                accusantium aperiam repudiandae eaque reiciendis deleniti
-                                nulla nesciunt ipsam! Odit ducimus quos dolorum harum,
-                                architecto laudantium velit exercitationem alias nobis
-                                repudiandae necessitatibus nesciunt non nisi rerum hic nostrum
-                                porro cum provident eum. Fuga recusandae excepturi saepe ut
-                                optio officia alias numquam, commodi odio cupiditate labore
-                                exercitationem quos praesentium perspiciatis dignissimos quasi
-                                facere, nam voluptatem nisi debitis! Ullam ipsa molestias,
-                                expedita nulla, numquam non veritatis a eius accusantium
-                                quaerat id rerum placeat dignissimos. Consectetur, dolor
-                                dolores.
-                            </p>
-                            <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END Features ONE -->
-        </div>
-    </div>
-
-    <!--//TODO REMOVE THIS WHEN DONE! THIS IS JUST FOR REFERENCE! CARD COLUMNS FROM BOOTSTRAP -->
-    <section id="VitalityAndFood" class="jumbotron">
-        <div class="col-12">
-            <h2 class="text-center text-transform">Vitality & food - My story and more</h2>
-        </div>
-        <div class="card-columns">
-            <div class="card">
-                <img src="images\ruth_home_face250.jpg" class="card-img-top" alt="Photo of me">
-                <div class="card-body">
-                    <h5 class="card-title text-center">My story</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id, possimus
-                        natus
-                        repellat cupiditate sequi saepe accusantium maiores soluta ipsa modi voluptates qui! Laborum
-                        dicta
-                        aspernatur repellendus, hic qui asperiores officiis sequi. Culpa neque omnis ullam? Dicta
-                        voluptates
-                        dolores inventore nostrum itaque iusto deleniti, laboriosam, quidem officia animi voluptate
-                        autem
-                        eaque, labore saepe quisquam minus fugit distinctio exercitationem iure nemo. Quos deleniti
-                        fuga,
-                        aliquam unde rem asperiores odio. Nisi doloribus ab accusantium nostrum veniam aperiam numquam.
-                        Quo
-                        doloribus deserunt velit animi provident similique possimus autem nulla, modi sit temporibus
-                        ipsum.
-                        Mollitia recusandae tenetur, enim accusantium qui minus facere consequuntur praesentium!</p>
-                </div>
-            </div>
-            <div class="card p-3">
-                <blockquote class="blockquote mb-0 card-body">
-                    <p class="quote text-muted text-center">The greatness of a nation and it’s moral progress can be
-                        judged by the way its animals are treated.</p>
-                    <footer class="blockquote-footer">
-                        <small class="text-muted">
-                            <cite title="Source Title text-center">Ghandi</cite>
-                        </small>
-                    </footer>
-                </blockquote>
-            </div>
-            <div class="card">
-                <img src="images\sunset250.jpg" class="card-img-top" alt="Photo of sunset">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Photos & Videos</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, modi
-                        consectetur? Autem animi laboriosam aspernatur eaque fugit laudantium expedita ipsam!</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images\yoga_beach250.jpg" class="card-img-top" alt="Yoga on the beach">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Lifestyle</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, culpa?
-                        Repudiandae, alias. Laboriosam neque perspiciatis doloribus nam corrupti in vel minima optio.
-                        Doloribus quo fuga voluptas officia pariatur earum recusandae deleniti corrupti possimus, ad ab
-                        hic
-                        tenetur, dicta fugit ipsum ex odio quia omnis culpa reiciendis saepe distinctio. Corporis,
-                        reiciendis.</p>
-                </div>
-
-                <div class="card p-3">
-                    <blockquote class="blockquote mb-0 card-body">
-                        <p class="quote text-muted text-center">The biggest adventure you can take is to live the life
-                            of your
-                            dreams!
+        <div class="container-fluid callout-container" id="home">
+            <!--! Callout -->
+            <div class="opaque-overlay">&nbsp;</div>
+            <div class="row">
+                <div class="col-12">
+                    <section class="callout jumbotron text-center">
+                        <h1 class="jumbotron-header">plant-Based coach program</h1>
+                        <!-- lead is a bootstrap built in class -->
+                        <p class="jumbotron-subheader">
+                            - The secret to your future health -
                         </p>
-                        <footer class="blockquote-footer">
-                            <small class="text-muted">
-                                <cite title="Source Title quote-name">Oprah Winfrey</cite>
-                            </small>
-                        </footer>
-                    </blockquote>
+                        <p class="lead">
+                            Sign up and take control of your health!
+                            <span class="d-block d-sm-none"><br /></span><strong><mark>First month free, <i>Save $
+                                        333!</i></mark></strong>
+                        </p>
+                        <!-- add to attributes for the Modal: data-toggle="modalSignUp" and data-target="#signUpModal" to link the button to the modal -->
+                        <button class="btn btn-lg btn--cta btn--orange" data-toggle="modal" data-target="#signUpModal">
+                            More info!
+                        </button>
+                    </section>
+
+                    <div class="container-welcome-quote">
+                        <div class="row">
+                            <div class="col-12 page-header">
+                                <p class="welcome-quote quote">
+                                    The best day of your life is the one on which <br> you decide your
+                                    life is your own, No apologies <br> or excuses. No one to lean on,
+                                    rely on, or blame. <br> zThe gift Of life is yours; . . . and you
+                                    alone are responsible for the quality of it.
+                                </p>
+                                <br />
+                                <p class="welcome-quote"><strong> - Dan Zadra - </strong></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        <!--! END Callout -->
 
-
+        <!--! Features ONE -->
+        <div class="container-wrapper--color" id="VitalityAndFood">
+            <div class="features-container content-container">
+                <section class="features">
+                    <div class="opaque-overlay">&nbsp;</div>
+                    <div class="row">
+                        <div class="col-12 page-header" id="#mystory">
+                            <h2>vitality and food - my story</h2>
+                        </div>
+                    </div>
+                    <div class="row featureOneSections">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="feature">
+                                <!-- fax fa-spa is the icon from fontawsome. d-none d-sm-inline to hide it on mobile -->
+                                <h3><i class="fas fa-spa d-none d-sm-block"></i> My story</h3>
+                                <p>
+                                    I am a Certified Natural Health Consultant and Sivananda Yoga Instructor, Nutrition
+                                    and Wellness professional focused on conducting Nutrition Consultations and creating
+                                    Personalized Yoga Instruction promoting Healthy Bones for Balance, Endurance and
+                                    Strengths, Yoga for Stress Managements Creating Health. Teaching how to prepare home
+                                    cooked Vegan/Vegetarian, Raw and Cooked Meals in groups or on an one an one personal
+                                    basis.
+                                </p>
+                                <a href="mystory.html" class="btn btn--cta btn--orange">Read More</a>
+                            </div>
+                        </div>
+                        <!-- col-lg-4 will keep them side by side on large screens -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="feature">
+                                <h3>
+                                    <i class="fas fa-camera-retro d-none d-sm-block"></i> photos &
+                                    videos
+                                </h3>
+                                <p>
+                                    <strong>Add Janines video to this section! </strong><br />Lorem ipsum dolor sit,
+                                    amet
+                                    consectetur
+                                    adipisicing
+                                    elit. Aperiam quibusdam culpa sequi sapiente ullam odio iure
+                                    explicabo voluptates modi, ipsa, architecto deleniti nam
+                                    placeat, voluptatum officia corrupti! Molestiae nisi
+                                    doloremque quaerat earum, voluptatum distinctio tenetur quis
+                                    necessitatibus? Harum quas libero ipsam mollitia facilis!
+                                    Libero vel blanditiis ratione, dolores vitae adipisci
+                                    praesentium sint quod illum nulla. Maiores veritatis numquam
+                                    sunt rem corporis, eveniet nobis architecto blanditiis dolore
+                                    repudiandae accusamus dolores autem voluptate at, cum voluptas
+                                    ratione sapiente exercitationem ullam. Qui tempore aliquid
+                                    suscipit maiores ea animi id nam! Velit facilis aliquam
+                                    dolorum sint aperiam sit similique iste, minus, nisi,
+                                    repudiandae quis!§
+                                </p>
+                                <p>
+                                    <a class="btn btn-sm btn-light" href="#">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- d-md-none: do not display on large size but it will be displayed on small size. d-lg-block + col-lg-4 so it will be visible on large screens-->
+                        <div class="col-12 d-md-none d-lg-block col-lg-4">
+                            <div class="feature">
+                                <h3>
+                                    <i class="fas fa-heart d-none d-sm-block"></i> lifestyle
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                                    dolor error, quam maiores nisi porro cumque aliquam, alias
+                                    molestiae debitis officiis nemo ab distinctio dolore
+                                    accusantium aperiam repudiandae eaque reiciendis deleniti
+                                    nulla nesciunt ipsam! Odit ducimus quos dolorum harum,
+                                    architecto laudantium velit exercitationem alias nobis
+                                    repudiandae necessitatibus nesciunt non nisi rerum hic nostrum
+                                    porro cum provident eum. Fuga recusandae excepturi saepe ut
+                                    optio officia alias numquam, commodi odio cupiditate labore
+                                    exercitationem quos praesentium perspiciatis dignissimos quasi
+                                    facere, nam voluptatem nisi debitis! Ullam ipsa molestias,
+                                    expedita nulla, numquam non veritatis a eius accusantium
+                                    quaerat id rerum placeat dignissimos. Consectetur, dolor
+                                    dolores.
+                                </p>
+                                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- END Features ONE -->
+    </div>
 
     <!--! Bootstrap Javalinks should be above the CDN links -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
