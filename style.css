@@ -145,12 +145,29 @@ z-index: -5;
   color:white;
 }
 
+.page-header-quotes{
+  margin-top: 10px;
+  margin-bottom: 0;
+  border-bottom: 0;
+  text-align: center;
+  color:black;
+}
+
 .welcome-quote {
   font-size: large;
   color: white;
   text-align: left;
   font-family: "Kalam", cursive;
   font-family: "Indie Flower", cursive;
+}
+
+.rounded-circle {
+
+  margin-left: 100px;
+  margin-bottom: 70px;
+  margin-top: 0px;
+  margin-right: -31rem;
+
 }
 
 .page-header h2 {
@@ -167,6 +184,7 @@ z-index: -5;
 
 .quote-name {
   text-align: center;
+
 }
 
 /*-------------------------------- BLOCKDIVDERS -------------------------*/
@@ -302,7 +320,7 @@ margin-left: 10px;
   margin-right: 40px;
 }
 
-/*-------------------------------- MY STROY FILE -------------------------*/
+/*-------------------------------- MY STORY FILE -------------------------*/
 
 .myStory {
   text-align: center;
@@ -361,6 +379,8 @@ margin-left: 10px;
 
 /*-------------------------------- TESTIMONIALS -------------------------*/
 
+ 
+
 .quote {
   font-style: italic;
   font-weight: bold;
@@ -400,6 +420,14 @@ margin-left: 10px;
   margin-bottom: 20px;
   font-size: 45px;
   line-height: 45px;
+}
+
+.media {
+  display: center;
+}
+
+.center {
+  display: center;
 }
 
 /* target the button class inside of the the features class! */
