@@ -39,7 +39,7 @@
         <!-- mr-auto to outomatically push content to the left -->
         <ul class="navbar-nav mr-auto">
           <!-- list, first one is active so it is highlited, mr-2 to give righthand spacing -->
-          <li class="active nav-item mr-2">
+          <li class="nav-item mr-2">
             <a class="nav-link" href="#vitalityandfood">vitality & food</a>
           </li>
           <li class="nav-item mr-2">
@@ -63,7 +63,7 @@
         <p class="navbar-text my-auto mr-2 capitalize">
           <i>the secret to your health!</i>
         </p>
-        <a href="/login" class="btn btn--cta btn--orange">Sign In</a>
+        <a href="/login" class="btn--action">Sign In</a>
       </div>
     </nav>
 
@@ -85,7 +85,7 @@
                       333!</i></mark></strong>
               </p>
               <!-- add to attributes for the Modal: data-toggle="modalSignUp" and data-target="#signUpModal" to link the button to the modal -->
-              <button class="btn btn-lg btn--cta btn--orange" data-toggle="modal" data-target="#signUpModal">
+              <button class="btn--action" data-toggle="modal" data-target="#signUpModal">
                 More info!
               </button>
             </section>
@@ -115,7 +115,7 @@
         <section class="features">
           <div class="opaque-overlay">&nbsp;
             <div class="row">
-              <div class="col-12 page-header" id="#mystory">
+              <div class="col-12 page-header" id="#mystory" style="margin-top: 80px;">
                 <h2>vitality and food - my story</h2>
               </div>
             </div>
@@ -123,7 +123,8 @@
               <div class="col-12 col-md-6 col-lg-4">
                 <div class="feature">
                   <!-- fax fa-spa is the icon from fontawsome. d-none d-sm-inline to hide it on mobile -->
-                  <h3><i class="fas fa-spa d-none d-sm-block"></i> My story</h3>
+                  <h3>My story</h3>
+
                   <p>
                     I am a Certified Natural Health Consultant and Sivananda Yoga Instructor, Nutrition
                     and Wellness professional focused on conducting Nutrition Consultations and creating
@@ -132,16 +133,16 @@
                     cooked Vegan/Vegetarian, Raw and Cooked Meals in groups or on an one an one personal
                     basis.
                   </p>
-                  <a href="mystory.html" class="btn btn--cta btn--orange">Read More</a>
+                  <a href="mystory.html" class="btn-readmore">Read More</a>
                 </div>
               </div>
               <!-- col-lg-4 will keep them side by side on large screens -->
               <div class="col-12 col-md-6 col-lg-4">
                 <div class="feature">
                   <h3>
-                    <i class="fas fa-camera-retro d-none d-sm-block"></i> photos &
-                    videos
+                    photos & videos
                   </h3>
+
                   <p>
                     <strong>Add Janines video to this section! </strong><br />Lorem ipsum dolor sit,
                     amet
@@ -162,7 +163,7 @@
                     repudiandae quis!§
                   </p>
                   <p>
-                    <a class="btn btn-sm btn-light" href="#">Read More</a>
+                    <a class="btn-readmore" href="#">Read More</a>
                   </p>
                 </div>
               </div>
@@ -170,7 +171,7 @@
               <div class="col-12 d-md-none d-lg-block col-lg-4">
                 <div class="feature">
                   <h3>
-                    <i class="fas fa-heart d-none d-sm-block"></i> lifestyle
+                    lifestyle
                   </h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
@@ -188,7 +189,7 @@
                     quaerat id rerum placeat dignissimos. Consectetur, dolor
                     dolores.
                   </p>
-                  <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                  <p><a class="btn-readmore" href="#">Read More</a></p>
                 </div>
               </div>
             </div>
@@ -204,7 +205,7 @@
         <section class="features">
           <div class="opaque-overlay">&nbsp;</div>
           <div class="row">
-            <div class="col-12 page-header" id="#coaching">
+            <div class="col-12 page-header" id="#coaching" style="margin-top: 80px;">
               <h2>Coaching Program</h2>
             </div>
           </div>
@@ -228,7 +229,7 @@
                   or grocery shopping tour, as well as scheuled cooking sessions
                   together. Comprehensive Three Month Coaching Program: $999
                 </p>
-                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                <p><a class="btn-readmore" href="#">Read More</a></p>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
@@ -249,7 +250,7 @@
                   ratione obcaecati hic maiores, eveniet sint accusamus odio
                   mollitia soluta id asperiores tempore!
                 </p>
-                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                <p><a class="btn-readmore" href="#">Read More</a></p>
               </div>
             </div>
             <div class="col-12 d-md-none d-lg-block col-lg-4">
@@ -270,7 +271,7 @@
                   ab eaque laborum quia et. Totam, nemo eos? Dolore quam quaerat
                   dolorum quidem non quo obcaecati.
                 </p>
-                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                <p><a class="btn-readmore" href="#">Read More</a></p>
               </div>
             </div>
           </div>
@@ -284,63 +285,52 @@
         <section class="features">
           <div class="opaque-overlay">&nbsp;</div>
           <div class="row">
-            <div class="col-12 page-header" id="#courses">
+            <div class="col-12 page-header" id="#courses" style="margin-top: 30px;">
               <h2>culinary courses</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-12">
-              <div class="feature">
+              <div class="feature courses-p">
                 <h3>
-                  kick-start <span class="badge badge-success">NEW!</span>
+                  kick-start
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat enim deleniti sapiente laboriosam recusandae in nam
-                  cum adipisci ut accusamus vitae ducimus autem asperiores rem
-                  aut, ratione consectetur nostrum facilis doloremque
-                  repudiandae! Atque quis aut eveniet necessitatibus incidunt ex
-                  officia dolores! Asperiores laboriosam architecto velit nobis
-                  possimus at quod, ipsum quos, voluptate saepe dolores
-                  praesentium consequuntur quasi inventore minima error. Odio
-                  facilis quo tempora nostrum optio quae possimus laudantium
-                  sequi, et quidem. Ab reiciendis sint veniam, sit eos nisi
-                  ullam quas et quam quos omnis nam recusandae optio corporis
-                  illo molestias id. Facilis illum labore minus, laboriosam id
-                  enim cum.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis exercitationem corporis
+                  commodi sapiente sint deserunt sit tempore minus, cumque voluptatem necessitatibus dicta voluptate
+                  laboriosam ducimus! Tenetur id vitae perferendis natus dolores, aperiam inventore debitis ex alias
+                  obcaecati numquam officia iusto a rem accusamus fugit? Dignissimos vero quam harum. Minima, inventore
+                  eligendi quis delectus atque enim maxime hic sed quibusdam similique dolores accusamus autem sunt
+                  laudantium eius blanditiis iure suscipit.
                 </p>
-                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                <p><a class="btn-readmore" href="#">Read More</a></p>
               </div>
             </div>
             <div class="col-12">
-              <div class="feature">
+              <div class="feature courses-p">
                 <h3>individual vegan cooking class</h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore ab rem eaque commodi accusantium eum ex delectus,
-                  ducimus sit aspernatur error. Nam perferendis iure soluta
-                  voluptatem. Similique nisi magni vitae, unde eveniet explicabo
-                  temporibus, debitis commodi, cupiditate voluptate blanditiis
-                  consequuntur dolorem recusandae harum deserunt esse eum
-                  beatae. Similique eaque deserunt vero numquam in, doloribus
-                  maiores ullam, quod alias quaerat inventore, fugiat tempora
-                  beatae neque facilis tempore aperiam exercitationem
-                  dignissimos totam. Eum, voluptas! Animi minus enim culpa ullam
-                  molestias cum. Eos recusandae ipsa cumque possimus architecto
-                  rem, mollitia obcaecati. Maiores cum vitae deleniti neque unde
-                  quam architecto veritatis fuga ratione asperiores!
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto laudantium impedit, laboriosam quidem
+                  quam voluptatem laborum sed alias maxime quisquam vel perspiciatis quaerat ullam culpa tempore
+                  consequuntur consequatur soluta! Veniam doloribus aperiam nulla magnam tenetur in assumenda mollitia
+                  esse optio ab. Neque quidem mollitia quae at officiis id a soluta et, vero placeat? A animi sint magni
+                  nulla, dolorum totam earum blanditiis laborum recusandae, commodi aspernatur illo quisquam minus qui?
                 </p>
-                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                <p><a class="btn-readmore" href="#">Read More</a></p>
               </div>
             </div>
             <div class="col-12">
-              <div class="feature">
+              <div class="feature courses-p">
                 <h3>semi-Private vegan cooking class</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellendus, libero!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, voluptatum quis fugiat unde placeat
+                  eaque sapiente ex quam facilis explicabo sint eveniet quibusdam, iusto repudiandae quaerat rem
+                  aspernatur, incidunt itaque asperiores illum officiis neque consequuntur et. Perspiciatis autem
+                  accusantium fugit distinctio? Deserunt exercitationem cupiditate magnam similique est itaque, nostrum
+                  dolore officia sint perferendis vero sunt debitis. Quaerat quasi, laudantium deserunt mollitia
+                  pariatur repellendus distinctio dolore qui voluptate sunt perspiciatis quas!
                 </p>
-                <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+                <p><a class="btn-readmore" href="#">Read More</a></p>
               </div>
             </div>
           </div>
@@ -359,10 +349,13 @@
           </div>
           <div class="row">
             <!-- col-12, col-md-6 for large and medium screens -->
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12 offset-2 col-md-6">
               <div class="media">
                 <div class="media-left">
                   <img src="images\Stefan center.jpg" class="rounded-circle mr-3" height="200" width="200" />
+
+                  <!--! Remove the picture on smaller screens! -->
+
                 </div>
                 <div class="media-body text-center">
                   <blockquote>
@@ -382,7 +375,7 @@
           </div>
           <div class="row">
             <!-- col-12, col-md-6 for large and medium screens -->
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12 offset-2 col-md-6">
               <div class="media">
                 <div class="media-left">
                   <img src="images\Rebecca center.jpg" class="rounded-circle mr-3" height="200" width="200" />
