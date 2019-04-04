@@ -27,7 +27,7 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    height: 30rem;
   }
   .carousel-item > img {
     position: absolute;
@@ -138,7 +138,7 @@ body {
   /*!--------------- TESTIMOMIALS ------------------ */
 
   .testimonial-rounded-circle {
-    margin-bottom: 10px;
+    margin-bottom: 70px;
     margin-top: 10px;
     margin-right: 0;;
     margin-left: 0;
