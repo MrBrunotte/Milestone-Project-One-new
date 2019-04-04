@@ -18,8 +18,15 @@ body {
     background-color: rgba(121, 119, 119, 0.99); /* ! same as navbar */
   }
   /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
+  .carousel-caption-more-text {
     bottom: 3rem;
+    font-family: "Nobile", sans-serif !important;
+    text-transform: capitalize;
+    z-index: 10;
+  }
+
+  .carousel-caption-less-text {
+    bottom: 3.5rem;
     font-family: "Nobile", sans-serif !important;
     text-transform: capitalize;
     z-index: 10;
@@ -27,7 +34,7 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 30rem;
+    height: 27rem;
   }
   .carousel-item > img {
     position: absolute;
@@ -76,7 +83,7 @@ body {
   /* Center align the text within the three columns below the carousel */
 /*!--------------- container color ------------------*/
 .marketing-container-color {
-  background-color:rgb(204, 134, 4);
+  background-color:rgba(153, 151, 151, 0.99);
 }
 
 .container-fluid {
@@ -92,6 +99,11 @@ body {
   .marketing h2 {
     font-weight: 400;
   }
+
+  .marketing {
+    margin-top: -120px;
+  }
+
   .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
@@ -135,15 +147,7 @@ body {
     }
   }
 
-  /*!--------------- TESTIMOMIALS ------------------ */
-
-  .testimonial-rounded-circle {
-    margin-bottom: 70px;
-    margin-top: 10px;
-    margin-right: 0;;
-    margin-left: 0;
-    border-radius: 50%;
-  }
+ 
 
   
  

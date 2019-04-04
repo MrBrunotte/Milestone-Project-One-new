@@ -5,6 +5,12 @@ body {
 
   h2 {
     text-transform: capitalize;
+    text-align: center;
+    color:white;
+  }
+
+  p {
+    color: white;
   }
 
   .header-text {
@@ -14,8 +20,8 @@ body {
     font-size: 3em;
     font-weight: bold;
     letter-spacing: 0.1em;
-    margin-bottom: 70px;
-    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     color: white;
@@ -161,11 +167,11 @@ margin-bottom: 0rem
 
 .coaching-container {
   /*! vh = viewport height 95% */
-  background-color: rgb(182, 3, 3);
+  background-color: rgba(121, 119, 119, 0.99);
   height: 105vh;
 }
 .courses-container {
-  background-color: rgb(182, 140, 3);
+  background-color: rgba(153, 151, 151, 0.99);
   height: 105vh;
 }
 
@@ -270,4 +276,50 @@ margin-bottom: 0rem
   .quote:after {
     font-size: 1rem;
     content: close-quote;
+  }
+
+  /*!--------------- IMAGES & VIDEO ------------------ */
+
+  .image-center-course { 
+    display: block;
+    margin-left: 80px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .image-center-coach {
+    display: block;
+    margin-left: 305px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .image-center-lifestyle {
+    display: block;
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+
+  .img-yoga-video {
+    margin-left: 0px;
+  }
+
+  .wrapper-video {
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 20px; 
+  }
+
+  video {
+    width: 100%;
+  }
+
+   /*!--------------- TESTIMOMIALS ------------------ */
+
+   .testimonial-rounded-circle {
+    margin-bottom: 70px;
+    margin-top: 10px;
+    margin-right: 0;;
+    margin-left: 0;
+    border-radius: 50%;
   }
