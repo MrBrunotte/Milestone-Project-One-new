@@ -106,10 +106,13 @@ body {
 
 .btn--action {
   margin-top: 30px;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  padding-top: 2px;
   text-align: center;
   color: white;
+  border-radius: 10%;
   background-color: #555454;
   border-color: #555454;
 }
