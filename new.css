@@ -3,6 +3,24 @@ body {
     padding-top: 5vh;
   }
 
+  h2 {
+    text-transform: capitalize;
+  }
+
+  .header-text {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Nobile", sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+  }
+
   .opaque-overlay {
     position: absolute;
     margin-bottom: 362px;
@@ -13,6 +31,18 @@ body {
     width: 100%;
     z-index: -10;
     background-color: rgb(0, 0, 0, 0.5); /* 0.5 (Alpha) is the opaque transparency*/
+  }
+
+  /*!-------------------------------- CAROUSEL -------------------------*/
+
+  .carousel-header {
+    margin-top: 90px;
+    font-family: "Nobile", sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
   }
 
 
@@ -45,7 +75,7 @@ body {
   font-weight: bold;
 }
 
-/*-------------------------------- BUTTONS -------------------------*/
+/*!-------------------------------- BUTTONS -------------------------*/
 .btn-readmore {
   padding-top: 3px;
   padding-bottom: 2px;
@@ -123,6 +153,34 @@ margin-bottom: 0rem
         z-index: -10;
 }
 
+.vitality-container {
+  /*! vh = viewport height 95% */
+  background-color:red;
+  height: 105vh;
+}
+
+.coaching-container {
+  /*! vh = viewport height 95% */
+  background-color: rgb(182, 3, 3);
+  height: 105vh;
+}
+.courses-container {
+  background-color: rgb(182, 140, 3);
+  height: 105vh;
+}
+
+.container-header-testimonials {
+  background-color: #cf8804;
+  margin: 0;
+}
+
+.carousel-inner-testimonials {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #cf8804;
+}
+
 .jumbotron-header {
     margin-top: 200px;
     text-align: center;
@@ -188,11 +246,12 @@ margin-bottom: 0rem
   .quote {
     font-style: italic;
     font-weight: bold;
-  }
-  
-  .quote {
     quotes: "“" "”" "‘" "’";
   }
+  
+  /*.quote {
+    quotes: "“" "”" "‘" "’";
+  }*/
   
   .quote-testimonials {
     color: black;

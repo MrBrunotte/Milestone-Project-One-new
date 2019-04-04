@@ -37,8 +37,36 @@ body {
     height: 32rem;
   }
 
-  .carousel-p {
-    text-transform: capitalize;
+/*!--------------- QUOTES ------------------ */
+
+  .quote-carousel {
+    text-align: center;
+    color: #fdfcfc93;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    quotes: "“" "”" "‘" "’";
+  }
+
+  /*!--------------- BUTTONS ------------------ */
+
+  .btn-action {
+    
+    padding: 10px;
+    border-radius: 8px; 
+    text-align: center;
+    color: white;
+    background-color: #3b3b3b;
+    border-color: #555454;
+  }
+  
+  .btn-action:hover,
+  .btn-action:active,
+  .btn-action:focus,
+  .btn-action:active:focus {
+    color: white;
+    text-decoration: none;
+    background-color: #6b6a6a;
+    border-color: #595858;
   }
   
   
@@ -46,9 +74,20 @@ body {
   -------------------------------------------------- */
   
   /* Center align the text within the three columns below the carousel */
+/*!--------------- container color ------------------*/
+.marketing-container-color {
+  background-color:rgb(204, 134, 4);
+}
+
+.container-fluid {
+  margin-top: -64px;
+  padding-top: 64px;
+}
+
   .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
+    
   }
   .marketing h2 {
     font-weight: 400;
@@ -95,4 +134,17 @@ body {
       margin-top: 7rem;
     }
   }
+
+  /*!--------------- TESTIMOMIALS ------------------ */
+
+  .testimonial-rounded-circle {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 0;;
+    margin-left: 0;
+    border-radius: 50%;
+  }
+
+  
+ 
   
