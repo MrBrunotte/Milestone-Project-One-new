@@ -13,7 +13,7 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
+  .carousel {
     margin-bottom: 4rem;
     background-color: rgba(121, 119, 119, 0.99); /* ! same as navbar */
   }
