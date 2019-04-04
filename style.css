@@ -59,7 +59,7 @@ z-index: -5;
 
 .features-container {
   height: 100vh;
-  background: url("images/rsz_background.jpg")no-repeat bottom right fixed; 
+  /*background: url("images/rsz_background.jpg")no-repeat bottom right fixed; */
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -98,7 +98,7 @@ z-index: -5;
 .callout-container {
   /* vh = viewport height 100% */
   height: 100vh;
-  background: url("images/rsz_background.jpg")no-repeat bottom right fixed; 
+  background: url("images/rsz_background.jpg")no-repeat bottom right fixed;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -158,7 +158,7 @@ z-index: -5;
 .welcome-quote {
   font-size: large;
   margin-left: 115px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: left;
   font-family: "Kalam", cursive;
   font-family: "Indie Flower", cursive;
@@ -220,6 +220,7 @@ z-index: -5;
 /*-------------------------------- CONTENT CONTAINERS -------------------------*/
 
 .content-container {
+  /*background-color: orange;*/
   padding-top: 75px;
   padding-bottom: 75px;
   color: white;
@@ -313,6 +314,10 @@ mark {
 
 
 /*-------------------------------- FEATURES SECTIONS -------------------------*/
+#vitalityandfood {
+  background-color: red;
+}
+
 .featureOneSections {
 margin-top: 60px;
 margin-right: 10px;
@@ -425,12 +430,12 @@ margin-left: 10px;
 }
 
 .quote-testimonials {
-  color: black;
+  color: white;
 
 }
 
 .quote-p {
-  color: black;
+  color: white;
 }
 
 .quote:before {
