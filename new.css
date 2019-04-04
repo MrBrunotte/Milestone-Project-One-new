@@ -179,7 +179,7 @@ margin-bottom: 0rem
 }
 
 .container-header-testimonials {
-  background-color: #cf8804;
+  background-color: rgba(121, 119, 119, 0.99);
   margin: 0;
 }
 
@@ -187,7 +187,7 @@ margin-bottom: 0rem
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: #cf8804;
+  background-color: #898a8ba4;
 }
 
 .jumbotron-header {
